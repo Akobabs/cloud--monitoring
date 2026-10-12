@@ -132,8 +132,23 @@ elif page == "Prediction explorer":
     b.metric("Raised detections", int(predictions.prediction.sum()))
     c.metric("Missed positives", int(((predictions.label == 1) & (predictions.prediction == 0)).sum()))
     n = st.slider("Observations to display", 100, min(3000, len(predictions)), min(1000, len(predictions)), 100)
-    st.line_chart(pd.DataFrame({"Anomaly score": predictions.score.iloc[:n].to_numpy(),
-                                "Decision threshold": [record.threshold] * n}), color=["#2463a8", "#e6a23c"])
+    chart_data = pd.DataFrame({"Observation": range(n),
+                               "Anomaly score": predictions.score.iloc[:n].to_numpy(),
+                               "Decision threshold": [record.threshold] * n})
+    # A direct Vega-Lite specification avoids Altair's Python 3.14 TypedDict import bug.
+    st.vega_lite_chart(chart_data.melt("Observation", var_name="Series", value_name="Value"), {
+        "mark": {"type": "line"},
+        "encoding": {
+            "x": {"field": "Observation", "type": "quantitative"},
+            "y": {"field": "Value", "type": "quantitative"},
+            "color": {"field": "Series", "type": "nominal", "scale": {
+                "domain": ["Anomaly score", "Decision threshold"],
+                "range": ["#2463a8", "#e6a23c"]}},
+            "tooltip": [{"field": "Observation", "type": "quantitative"},
+                        {"field": "Series", "type": "nominal"},
+                        {"field": "Value", "type": "quantitative"}]
+        }
+    }, width="stretch")
     st.caption("Horizontal axis is held-out sequence position. Google positions are ordered records from separate tasks, not a continuous task signal.")
     errors_only = st.checkbox("Show misclassified records only", value=True)
     shown = predictions[predictions.label != predictions.prediction] if errors_only else predictions

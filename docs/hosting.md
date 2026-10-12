@@ -13,6 +13,9 @@ excluded. Existing local runs take precedence when running on your computer.
 4. Under advanced settings, select Python 3.12, then deploy.
 
 Hosting displays saved experiments. It does not run training or connect to live cloud telemetry.
+The prediction chart uses a direct Vega-Lite specification to avoid the Altair
+5.5 import incompatibility with Python 3.14. Python 3.12 remains the recommended
+runtime to match the research environment.
 The bundled Google-derived results retain the source's noncommercial attribution/share-alike caveat;
 see the README for dataset provenance and interpretation.
 
