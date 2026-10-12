@@ -1,0 +1,68 @@
+# Python bytecode and native extensions
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+*.so
+
+# Virtual environments and local environment variables
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+.python-version
+
+# Packaging and tooling caches
+build/
+dist/
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.coverage*
+htmlcov/
+.cache/
+.ipynb_checkpoints/
+pip-wheel-metadata/
+
+# Credentials and machine-specific settings
+.streamlit/secrets.toml
+kaggle.json
+*.pem
+*.key
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.log
+*.tmp
+*.part
+
+# Downloaded datasets, fitted models and reproducible run artifacts
+data/raw/**
+data/processed/**
+artifacts/**
+!artifacts/.gitkeep
+*.joblib
+*.pkl
+*.pickle
+*.keras
+*.h5
+*.hdf5
+*.onnx
+*.npz
+
+# Word documents (including the supplied research document)
+*.[dD][oO][cC][xX]
+~$*
+
+# Document rendering intermediates and local browser dependencies
+docs/_qa/
+node_modules/
+

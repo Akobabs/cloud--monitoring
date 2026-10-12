@@ -1,0 +1,17 @@
+{
+  "name": "quick",
+  "seeds": [42],
+  "smd_machines": ["machine-1-1"],
+  "split_fractions": [0.6, 0.2, 0.2],
+  "sequence_length": 30,
+  "rolling_window": 5,
+  "max_fit_samples": 1500,
+  "normal_fpr_target": 0.05,
+  "threads": 2,
+  "models": {
+    "isolation_forest": [{"n_estimators": 100, "max_samples": 256}],
+    "one_class_svm": [{"nu": 0.05, "gamma": "scale"}],
+    "random_forest": [{"n_estimators": 100, "max_depth": 10}],
+    "lstm_autoencoder": [{"latent_dim": 8, "epochs": 3, "batch_size": 64}]
+  }
+}
