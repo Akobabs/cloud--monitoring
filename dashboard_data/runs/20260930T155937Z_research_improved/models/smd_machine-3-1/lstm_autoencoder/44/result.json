@@ -1,0 +1,41 @@
+{
+  "dataset": "smd_machine-3-1",
+  "model": "lstm_autoencoder",
+  "model_name": "LSTM Autoencoder",
+  "seed": 44,
+  "status": "complete",
+  "parameters": {
+    "latent_dim": 8,
+    "epochs": 15,
+    "batch_size": 64
+  },
+  "threshold": 1.6717503666877747,
+  "threshold_policy": "Baseline threshold retained: validation lacks both classes",
+  "selection_policy": "First predefined candidate: validation contains no positives",
+  "fit_rows": 5909,
+  "fit_normal": 5909,
+  "test_rows": 5711,
+  "feature_count": 114,
+  "train_seconds": 62.813945000001695,
+  "tuning_seconds": 80.02591579995351,
+  "latency_ms_per_observation": 1.746327823491999,
+  "inference_repetition_seconds": [
+    10.220594099955633,
+    9.95874560001539,
+    9.973278199962806
+  ],
+  "peak_rss_mb": 878.51953125,
+  "incremental_peak_rss_mb": 355.87109375,
+  "lifetime_peak_rss_mb": 897.48828125,
+  "validation_f1": null,
+  "precision": 0.23719165085388993,
+  "recall": 1.0,
+  "f1": 0.3834355828220859,
+  "roc_auc": 0.9968664518438954,
+  "average_precision": 0.9191854775702832,
+  "false_positive_rate": 0.0719656283566058,
+  "tn": 5184,
+  "fp": 402,
+  "fn": 0,
+  "tp": 125
+}

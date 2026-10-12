@@ -1,0 +1,40 @@
+{
+  "dataset": "google_cluster",
+  "model": "one_class_svm",
+  "model_name": "One-Class SVM",
+  "seed": 43,
+  "status": "complete",
+  "parameters": {
+    "nu": 0.05,
+    "gamma": "scale"
+  },
+  "threshold": -17.051267768883836,
+  "threshold_policy": "Maximum labelled-validation F1; largest threshold resolves exact ties",
+  "selection_policy": "Maximum validation F1",
+  "fit_rows": 4398,
+  "fit_normal": 4398,
+  "test_rows": 47381,
+  "feature_count": 13,
+  "train_seconds": 0.16389860003255308,
+  "tuning_seconds": 4.204987799981609,
+  "latency_ms_per_observation": 0.03321484139211178,
+  "inference_repetition_seconds": [
+    1.5737523999996483,
+    1.3475739000132307,
+    1.8085806999588385
+  ],
+  "peak_rss_mb": 182.88671875,
+  "incremental_peak_rss_mb": 6.1328125,
+  "lifetime_peak_rss_mb": 182.88671875,
+  "validation_f1": 0.48468068553646204,
+  "precision": 0.2785179317297998,
+  "recall": 0.6098714815106836,
+  "f1": 0.3824001977505871,
+  "roc_auc": 0.525895693661886,
+  "average_precision": 0.2642374356019356,
+  "false_positive_rate": 0.5774684419851288,
+  "tn": 14661,
+  "fp": 20037,
+  "fn": 4948,
+  "tp": 7735
+}

@@ -20,7 +20,8 @@ st.markdown('<div class="eyebrow">OFFLINE EXPERIMENTS / CLOUD TELEMETRY</div>', 
 st.title("Cloud anomaly research")
 st.caption("Compare detection quality and computing cost across four machine learning approaches.")
 
-runs = sorted((ROOT / "artifacts/runs").glob("*/run.json"), reverse=True)
+local_runs = list((ROOT / "artifacts/runs").glob("*/run.json"))
+runs = sorted(local_runs or list((ROOT / "dashboard_data/runs").glob("*/run.json")), reverse=True)
 completed = [p for p in runs if json.loads(p.read_text(encoding="utf-8")).get("status") == "complete"]
 default_run = runs.index(completed[0]) if completed else 0
 if not runs:
@@ -29,8 +30,8 @@ if not runs:
     st.stop()
 with st.sidebar:
     st.subheader("Experiment explorer")
-    chosen = st.selectbox("Experiment", runs, index=default_run, format_func=lambda p: p.parent.name)
-    page = st.radio("View", ["Overview", "Model comparison", "Prediction explorer", "Dataset details", "Reproducibility"])
+    chosen = st.selectbox("Experiment", runs, index=default_run, format_func=lambda p: p.parent.name, key="experiment")
+    page = st.radio("View", ["Overview", "Model comparison", "Prediction explorer", "Dataset details", "Reproducibility"], key="view")
     st.divider()
     st.caption("Google: failure proxy classification\n\nSMD: adapted chronological anomaly benchmark")
     st.caption("Read-only results. No production alerts or live cloud connections.")

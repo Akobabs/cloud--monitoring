@@ -1,0 +1,41 @@
+{
+  "dataset": "smd_machine-1-1",
+  "model": "lstm_autoencoder",
+  "model_name": "LSTM Autoencoder",
+  "seed": 43,
+  "status": "complete",
+  "parameters": {
+    "latent_dim": 8,
+    "epochs": 15,
+    "batch_size": 64
+  },
+  "threshold": 0.7104198932647704,
+  "threshold_policy": "Maximum labelled-validation F1; largest threshold resolves exact ties",
+  "selection_policy": "Maximum validation F1",
+  "fit_rows": 5744,
+  "fit_normal": 5744,
+  "test_rows": 5667,
+  "feature_count": 114,
+  "train_seconds": 24.745034499967005,
+  "tuning_seconds": 151.06751209998038,
+  "latency_ms_per_observation": 2.4150530439343822,
+  "inference_repetition_seconds": [
+    13.983860899985302,
+    12.621664499980398,
+    13.686105599976145
+  ],
+  "peak_rss_mb": 851.65234375,
+  "incremental_peak_rss_mb": 358.1953125,
+  "lifetime_peak_rss_mb": 865.265625,
+  "validation_f1": 0.7424503882657464,
+  "precision": 0.006439742410303588,
+  "recall": 1.0,
+  "f1": 0.012797074954296161,
+  "roc_auc": 0.9998233215547703,
+  "average_precision": 0.9136577708006277,
+  "false_positive_rate": 0.19081272084805653,
+  "tn": 4580,
+  "fp": 1080,
+  "fn": 0,
+  "tp": 7
+}

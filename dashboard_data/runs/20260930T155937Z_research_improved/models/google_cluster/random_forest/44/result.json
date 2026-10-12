@@ -1,0 +1,40 @@
+{
+  "dataset": "google_cluster",
+  "model": "random_forest",
+  "model_name": "Random Forest",
+  "seed": 44,
+  "status": "complete",
+  "parameters": {
+    "n_estimators": 100,
+    "max_depth": 10
+  },
+  "threshold": 0.3300823078621884,
+  "threshold_policy": "Maximum labelled-validation F1; largest threshold resolves exact ties",
+  "selection_policy": "Maximum validation F1",
+  "fit_rows": 6000,
+  "fit_normal": 4399,
+  "test_rows": 47381,
+  "feature_count": 13,
+  "train_seconds": 0.7633538999943994,
+  "tuning_seconds": 3.720637499995064,
+  "latency_ms_per_observation": 0.004580973386886001,
+  "inference_repetition_seconds": [
+    0.2170511000440456,
+    0.20588730002054945,
+    0.22839679999742657
+  ],
+  "peak_rss_mb": 176.46484375,
+  "incremental_peak_rss_mb": 4.12890625,
+  "lifetime_peak_rss_mb": 176.46875,
+  "validation_f1": 0.5273477595994721,
+  "precision": 0.3209167183572198,
+  "recall": 0.7750532208468028,
+  "f1": 0.4538948146095951,
+  "roc_auc": 0.6424216892215403,
+  "average_precision": 0.3613039576811046,
+  "false_positive_rate": 0.5994870021326878,
+  "tn": 13897,
+  "fp": 20801,
+  "fn": 2853,
+  "tp": 9830
+}

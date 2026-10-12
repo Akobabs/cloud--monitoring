@@ -1,0 +1,40 @@
+{
+  "dataset": "google_cluster",
+  "model": "isolation_forest",
+  "model_name": "Isolation Forest",
+  "seed": 42,
+  "status": "complete",
+  "parameters": {
+    "n_estimators": 100,
+    "max_samples": 256
+  },
+  "threshold": 0.3667071008578779,
+  "threshold_policy": "Maximum labelled-validation F1; largest threshold resolves exact ties",
+  "selection_policy": "Maximum validation F1",
+  "fit_rows": 4453,
+  "fit_normal": 4453,
+  "test_rows": 47381,
+  "feature_count": 13,
+  "train_seconds": 0.26947120000841096,
+  "tuning_seconds": 1.9127523000352085,
+  "latency_ms_per_observation": 0.006359895317742143,
+  "inference_repetition_seconds": [
+    0.3491238999995403,
+    0.3013382000499405,
+    0.21483950002584606
+  ],
+  "peak_rss_mb": 173.53125,
+  "incremental_peak_rss_mb": 1.0,
+  "lifetime_peak_rss_mb": 173.53515625,
+  "validation_f1": 0.49726902069389955,
+  "precision": 0.2897115106294021,
+  "recall": 0.710242056295829,
+  "f1": 0.41154970760233917,
+  "roc_auc": 0.5411136475287854,
+  "average_precision": 0.28299019306980816,
+  "false_positive_rate": 0.6364920168309413,
+  "tn": 12613,
+  "fp": 22085,
+  "fn": 3675,
+  "tp": 9008
+}

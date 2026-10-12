@@ -1,0 +1,141 @@
+{
+  "dataset": "google_cluster",
+  "display_name": "Google Cluster 2019 sample",
+  "source_rows": 405894,
+  "source_features": 34,
+  "duplicate_telemetry_rows_removed": 152300,
+  "unique_telemetry_rows": 253594,
+  "cross_partition_task_rows_purged": 11000,
+  "conflicting_label_keys": 0,
+  "event_fail_label_agreement": 1.0,
+  "max_observations_per_task_after_deduplication": 4,
+  "split_time_boundaries_microseconds": [
+    1504505000000,
+    2124000000000
+  ],
+  "label_semantics": "Kaggle failed flag (matches event=FAIL), a failure proxy; label 0 includes other event types and is not verified healthy operation.",
+  "protocol": "Chronological split by usage start_time with entire cross-boundary tasks purged; failure outcomes and identifiers excluded from inputs.",
+  "time_unit": "Microseconds relative to trace origin; CPU and memory are normalised trace units.",
+  "excluded_features": [
+    "failed",
+    "event",
+    "instance_events_type",
+    "collections_events_type",
+    "time",
+    "end_time",
+    "start_time",
+    "cluster",
+    "collection_id",
+    "instance_index",
+    "machine_id",
+    "user",
+    "collection_name",
+    "collection_logical_name"
+  ],
+  "lstm_status": "Not applicable: maximum 4 distinct observations per task; 30 required. No unrelated tasks joined into sequences.",
+  "limitations": "Secondary tabular failure discrimination, not prospective failure prediction. Kaggle event-to-usage join and label timing are not independently verified. No disk or network telemetry. The original trace's representativeness is not inherited by this sample.",
+  "features": [
+    "average_cpu",
+    "average_memory",
+    "maximum_cpu",
+    "maximum_memory",
+    "sample_cpu",
+    "requested_cpu",
+    "requested_memory",
+    "assigned_memory",
+    "page_cache_memory",
+    "cycles_per_instruction",
+    "memory_accesses_per_instruction"
+  ],
+  "raw_features": [
+    "average_cpu",
+    "average_memory",
+    "maximum_cpu",
+    "maximum_memory",
+    "sample_cpu",
+    "requested_cpu",
+    "requested_memory",
+    "assigned_memory",
+    "page_cache_memory",
+    "cycles_per_instruction",
+    "memory_accesses_per_instruction"
+  ],
+  "feature_count": 11,
+  "temporal": false,
+  "window": 1,
+  "partitions": {
+    "train": {
+      "rows": 146406,
+      "normal": 107597,
+      "positive": 38809
+    },
+    "validation": {
+      "rows": 48807,
+      "normal": 33769,
+      "positive": 15038
+    },
+    "test": {
+      "rows": 47381,
+      "normal": 34698,
+      "positive": 12683
+    }
+  },
+  "eligible_partitions": {
+    "train": {
+      "rows": 146406,
+      "normal": 107597,
+      "positive": 38809
+    },
+    "validation": {
+      "rows": 48807,
+      "normal": 33769,
+      "positive": 15038
+    },
+    "test": {
+      "rows": 47381,
+      "normal": 34698,
+      "positive": 12683
+    }
+  },
+  "raw_missing_values": {
+    "train": {
+      "average_cpu": 0,
+      "average_memory": 0,
+      "maximum_cpu": 0,
+      "maximum_memory": 2995,
+      "sample_cpu": 0,
+      "requested_cpu": 383,
+      "requested_memory": 383,
+      "assigned_memory": 0,
+      "page_cache_memory": 0,
+      "cycles_per_instruction": 40366,
+      "memory_accesses_per_instruction": 40366
+    },
+    "validation": {
+      "average_cpu": 0,
+      "average_memory": 0,
+      "maximum_cpu": 0,
+      "maximum_memory": 800,
+      "sample_cpu": 0,
+      "requested_cpu": 280,
+      "requested_memory": 280,
+      "assigned_memory": 0,
+      "page_cache_memory": 0,
+      "cycles_per_instruction": 11246,
+      "memory_accesses_per_instruction": 11246
+    },
+    "test": {
+      "average_cpu": 0,
+      "average_memory": 0,
+      "maximum_cpu": 0,
+      "maximum_memory": 692,
+      "sample_cpu": 0,
+      "requested_cpu": 103,
+      "requested_memory": 103,
+      "assigned_memory": 0,
+      "page_cache_memory": 0,
+      "cycles_per_instruction": 15575,
+      "memory_accesses_per_instruction": 15575
+    }
+  }
+}

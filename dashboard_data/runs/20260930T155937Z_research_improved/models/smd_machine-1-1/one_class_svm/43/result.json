@@ -1,0 +1,40 @@
+{
+  "dataset": "smd_machine-1-1",
+  "model": "one_class_svm",
+  "model_name": "One-Class SVM",
+  "seed": 43,
+  "status": "complete",
+  "parameters": {
+    "nu": 0.05,
+    "gamma": "scale"
+  },
+  "threshold": -12.542833912770204,
+  "threshold_policy": "Maximum labelled-validation F1; largest threshold resolves exact ties",
+  "selection_policy": "Maximum validation F1",
+  "fit_rows": 5744,
+  "fit_normal": 5744,
+  "test_rows": 5667,
+  "feature_count": 114,
+  "train_seconds": 0.36722409998765215,
+  "tuning_seconds": 1.0913672000169754,
+  "latency_ms_per_observation": 0.051624475030804674,
+  "inference_repetition_seconds": [
+    0.334246400045231,
+    0.2925558999995701,
+    0.27042990003246814
+  ],
+  "peak_rss_mb": 193.30078125,
+  "incremental_peak_rss_mb": 16.9453125,
+  "lifetime_peak_rss_mb": 193.38671875,
+  "validation_f1": 0.7274151436031332,
+  "precision": 0.009320905459387484,
+  "recall": 1.0,
+  "f1": 0.018469656992084433,
+  "roc_auc": 0.9995709237758708,
+  "average_precision": 0.782312925170068,
+  "false_positive_rate": 0.1314487632508834,
+  "tn": 4916,
+  "fp": 744,
+  "fn": 0,
+  "tp": 7
+}

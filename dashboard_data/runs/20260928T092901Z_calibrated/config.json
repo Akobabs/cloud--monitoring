@@ -1,0 +1,67 @@
+{
+  "name": "research",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "smd_machines": [
+    "machine-1-1",
+    "machine-2-1",
+    "machine-3-1"
+  ],
+  "split_fractions": [
+    0.6,
+    0.2,
+    0.2
+  ],
+  "sequence_length": 30,
+  "rolling_window": 5,
+  "max_fit_samples": 6000,
+  "normal_fpr_target": 0.05,
+  "threads": 2,
+  "models": {
+    "isolation_forest": [
+      {
+        "n_estimators": 100,
+        "max_samples": 256
+      },
+      {
+        "n_estimators": 200,
+        "max_samples": 256
+      }
+    ],
+    "one_class_svm": [
+      {
+        "nu": 0.01,
+        "gamma": "scale"
+      },
+      {
+        "nu": 0.05,
+        "gamma": "scale"
+      }
+    ],
+    "random_forest": [
+      {
+        "n_estimators": 100,
+        "max_depth": 10
+      },
+      {
+        "n_estimators": 200,
+        "max_depth": 20
+      }
+    ],
+    "lstm_autoencoder": [
+      {
+        "latent_dim": 8,
+        "epochs": 15,
+        "batch_size": 64
+      },
+      {
+        "latent_dim": 16,
+        "epochs": 15,
+        "batch_size": 64
+      }
+    ]
+  }
+}

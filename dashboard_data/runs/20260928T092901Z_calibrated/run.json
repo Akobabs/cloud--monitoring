@@ -1,0 +1,41 @@
+{
+  "run_id": "20260928T092901Z_calibrated",
+  "started_utc": "2026-09-28T09:29:01.153571+00:00",
+  "config_sha256": "c55e4a25bac541c8150f58ded941e0785d6d377eadea5623b3c037351a504f29",
+  "source_sha256": "96cbdf41d8d8120f4bcd7d462a820ac77bd7fa07cce20e927b65b2acf11d8000",
+  "status": "complete",
+  "hardware": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 142 Stepping 10, GenuineIntel",
+    "logical_cpus": 8,
+    "physical_cpus": 4,
+    "ram_gib": 7.846885681152344,
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]"
+  },
+  "versions": {
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.7.2",
+    "tensorflow": "2.20.0",
+    "keras": "3.15.1",
+    "psutil": "7.1.0",
+    "streamlit": "1.50.0"
+  },
+  "limitations": [
+    "Google LSTM is not applicable because task sequences are too short.",
+    "SMD split is adapted for supervised training, not the published benchmark split.",
+    "Seed variability does not quantify uncertainty across unseen environments.",
+    "Memory is sampled process RSS, not exact per-model allocation; latency is warm batch amortised time."
+  ],
+  "completed_utc": "2026-09-28T09:37:36.531746+00:00",
+  "completed_fits": 45,
+  "baseline_run": "artifacts\\runs\\20260923T140805Z_research",
+  "calibration_revision": true,
+  "calibration_script_sha256": "0d8151c810ba84712a11cc8ceb98d51449220b90cc0b1af7fec2ba301271d58a",
+  "measurement_origin": "Frozen weights, scores and fit/resource measurements reused from baseline; only thresholds change.",
+  "evaluation_status": "Exploratory follow-up: the evaluation period had already been reviewed; not an independent confirmation.",
+  "new_model_fits": 0,
+  "completed_evaluations": 45,
+  "threshold_decision_script_sha256": "d80ba2a64b98e2ba0fd7c0250ea608f12dacff63463c657e91e8872ff75a2fb7",
+  "numeric_io_note": "Frozen thresholds reapplied using round-trip float parsing to preserve tied score ranks. No threshold, label or model was changed."
+}

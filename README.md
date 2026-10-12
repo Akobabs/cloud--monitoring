@@ -24,6 +24,13 @@ run_project.bat improved
 
 This selects `configs/improved.json` and generates the comparison with the retained local baseline. It does not apply a second calibration pass. The current dashboard displays the before-and-after table; complete metrics, ranking scores, resource costs and regressions are retained in `artifacts/runs/20260930T155937Z_research_improved/improvement_comparison.csv`. See `docs/improvement_experiment.md` for the fixed experiment plan.
 
+## Online dashboard
+
+See [hosting instructions](docs/hosting.md) for deployment. Use `deploy/app.py`
+on Streamlit Community Cloud with Python 3.12. The repository includes a
+dashboard-only results snapshot, so no training or dataset download is required
+on the hosting server. For other hosts, install `requirements-dashboard.txt`.
+
 ## Start on Windows
 
 Install **64-bit Python 3.12** (with the Python launcher) and ensure Internet access for the first run. Keep at least 5 GB of free disk space. CPU execution is configured for the research comparison; GPU is not required.

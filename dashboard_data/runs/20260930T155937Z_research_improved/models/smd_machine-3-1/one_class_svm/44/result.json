@@ -1,0 +1,40 @@
+{
+  "dataset": "smd_machine-3-1",
+  "model": "one_class_svm",
+  "model_name": "One-Class SVM",
+  "seed": 44,
+  "status": "complete",
+  "parameters": {
+    "nu": 0.01,
+    "gamma": "scale"
+  },
+  "threshold": -0.6537541938264422,
+  "threshold_policy": "Baseline threshold retained: validation lacks both classes",
+  "selection_policy": "First predefined candidate: validation contains no positives",
+  "fit_rows": 5909,
+  "fit_normal": 5909,
+  "test_rows": 5711,
+  "feature_count": 114,
+  "train_seconds": 0.26120170002104715,
+  "tuning_seconds": 0.6637122000101954,
+  "latency_ms_per_observation": 0.04365070915792866,
+  "inference_repetition_seconds": [
+    0.24928920000093058,
+    0.22887220000848174,
+    0.26089700002921745
+  ],
+  "peak_rss_mb": 185.3046875,
+  "incremental_peak_rss_mb": 10.53125,
+  "lifetime_peak_rss_mb": 185.390625,
+  "validation_f1": null,
+  "precision": 0.16622340425531915,
+  "recall": 1.0,
+  "f1": 0.28506271379703535,
+  "roc_auc": 0.9979190834228429,
+  "average_precision": 0.8956955721849984,
+  "false_positive_rate": 0.11224489795918367,
+  "tn": 4959,
+  "fp": 627,
+  "fn": 0,
+  "tp": 125
+}

@@ -1,0 +1,40 @@
+{
+  "dataset": "smd_machine-2-1",
+  "model": "random_forest",
+  "model_name": "Random Forest",
+  "seed": 44,
+  "status": "complete",
+  "parameters": {
+    "n_estimators": 100,
+    "max_depth": 10
+  },
+  "threshold": -5e-324,
+  "threshold_policy": "Maximum labelled-validation F1; largest threshold resolves exact ties",
+  "selection_policy": "Maximum validation F1",
+  "fit_rows": 6000,
+  "fit_normal": 5872,
+  "test_rows": 4710,
+  "feature_count": 114,
+  "train_seconds": 1.123064500046894,
+  "tuning_seconds": 4.142206299991813,
+  "latency_ms_per_observation": 0.007640636939310217,
+  "inference_repetition_seconds": [
+    0.035987399984151125,
+    0.03475849999813363,
+    0.03643449995433912
+  ],
+  "peak_rss_mb": 173.63671875,
+  "incremental_peak_rss_mb": 1.875,
+  "lifetime_peak_rss_mb": 173.64453125,
+  "validation_f1": 0.21827123132211085,
+  "precision": 0.09278131634819532,
+  "recall": 1.0,
+  "f1": 0.16980765494462793,
+  "roc_auc": 0.5987749163096897,
+  "average_precision": 0.1035627531110625,
+  "false_positive_rate": 1.0,
+  "tn": 0,
+  "fp": 4273,
+  "fn": 0,
+  "tp": 437
+}

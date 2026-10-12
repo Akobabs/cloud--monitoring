@@ -1,0 +1,40 @@
+{
+  "dataset": "smd_machine-1-1",
+  "model": "isolation_forest",
+  "model_name": "Isolation Forest",
+  "seed": 44,
+  "status": "complete",
+  "parameters": {
+    "n_estimators": 100,
+    "max_samples": 256
+  },
+  "threshold": 0.46830193717799345,
+  "threshold_policy": "Maximum labelled-validation F1; largest threshold resolves exact ties",
+  "selection_policy": "Maximum validation F1",
+  "fit_rows": 5756,
+  "fit_normal": 5756,
+  "test_rows": 5667,
+  "feature_count": 114,
+  "train_seconds": 0.31513970001833513,
+  "tuning_seconds": 1.0754699999815784,
+  "latency_ms_per_observation": 0.006578701253039051,
+  "inference_repetition_seconds": [
+    0.038286699971649796,
+    0.0372815000009723,
+    0.036960800003726035
+  ],
+  "peak_rss_mb": 175.71484375,
+  "incremental_peak_rss_mb": 1.2890625,
+  "lifetime_peak_rss_mb": 175.71875,
+  "validation_f1": 0.7584070796460177,
+  "precision": 0.005998286203941731,
+  "recall": 1.0,
+  "f1": 0.01192504258943782,
+  "roc_auc": 0.8845532559313479,
+  "average_precision": 0.005663401418963316,
+  "false_positive_rate": 0.2049469964664311,
+  "tn": 4500,
+  "fp": 1160,
+  "fn": 0,
+  "tp": 7
+}

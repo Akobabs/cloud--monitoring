@@ -1,0 +1,40 @@
+{
+  "dataset": "smd_machine-3-1",
+  "model": "random_forest",
+  "model_name": "Random Forest",
+  "seed": 43,
+  "status": "complete",
+  "parameters": {
+    "n_estimators": 100,
+    "max_depth": 10
+  },
+  "threshold": 0.368893131078892,
+  "threshold_policy": "Baseline threshold retained: validation lacks both classes",
+  "selection_policy": "First predefined candidate: validation contains no positives",
+  "fit_rows": 6000,
+  "fit_normal": 5899,
+  "test_rows": 5711,
+  "feature_count": 114,
+  "train_seconds": 1.241201099997852,
+  "tuning_seconds": 1.4022442999994382,
+  "latency_ms_per_observation": 0.006152302577290596,
+  "inference_repetition_seconds": [
+    0.034638500015717,
+    0.03513580001890659,
+    0.046386700007133186
+  ],
+  "peak_rss_mb": 176.44140625,
+  "incremental_peak_rss_mb": 1.34765625,
+  "lifetime_peak_rss_mb": 176.44921875,
+  "validation_f1": null,
+  "precision": 0.011494252873563218,
+  "recall": 0.008,
+  "f1": 0.009433962264150943,
+  "roc_auc": 0.899952738990333,
+  "average_precision": 0.09375491351904565,
+  "false_positive_rate": 0.01539563193698532,
+  "tn": 5500,
+  "fp": 86,
+  "fn": 124,
+  "tp": 1
+}
